@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  padding: 2rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header,
+nav,
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+nav {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+nav div,
+nav h2,
+nav button {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 2rem;
+}
+
+nav button {
+  padding: 0.9rem 2rem;
+  border-radius: 1rem;
+}
+
+.no-style {
+  border: none;
+  background: none;
+}
+
+.light-btn {
+  background: hsl(0, 0%, 98%);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding: 10rem;
+  gap: 10rem;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.main-left h1 {
+  font-size: 6rem;
+}
+
+.main-left h2 {
+  opacity: 0.7;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.logos {
+  margin-top: 5rem;
+}
+
+.main-right {
+  display: flex;
+  background-image: url("./images/image-hero-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+}
