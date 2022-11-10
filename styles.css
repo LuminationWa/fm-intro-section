@@ -44,7 +44,6 @@ a:not([class]) {
 img,
 picture,
 svg {
-  max-width: 100%;
   display: block;
 }
 
@@ -168,6 +167,7 @@ nav a:hover {
 
 .drop-down-invisible img {
   height: 18px;
+  width: 18px;
 }
 
 .dd-row {
