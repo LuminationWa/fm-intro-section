@@ -279,3 +279,47 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    display: block;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .main-right {
+    background-image: url("./images/image-hero-mobile.png");
+    height: 45vh;
+    width: 100vw;
+  }
+  .main-left {
+    height: 50vh;
+    justify-content: flex-start;
+    padding: 6vh 2vh;
+    text-align: center;
+  }
+  .main-left h1 {
+    font-size: 36px;
+  }
+  .main-left p, .main-left button {
+    font-size: 16px;
+  }
+  br {
+    display: none;
+  }
+  .container { 
+    gap: 3vh;
+  }
+  .main-left button {
+    align-self: center;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .logos img {
+    height: 0.9rem;
+    width: auto;
+  }
+}
